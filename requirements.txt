@@ -1,0 +1,4 @@
+# === 环境配置 ===
+# 安装必要的Python库，使用pip命令在Colab环境中安装
+!pip install -Uqq transformers torch matplotlib pandas numpy accelerate  # 安装 transformers, torch, matplotlib, pandas, numpy, accelerate 等库
+!pip install -qq openfl   # 安装 OpenFL 联邦学习框架
