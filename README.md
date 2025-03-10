@@ -26,9 +26,9 @@
 
 # 海星AI (Seastar AI) - 第一代文化特征解析器
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  (可选，如果使用开源许可证)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
-## 项目简介 (Project Introduction)
+## 项目简介 (Project Introduction)##注意此代码是原始代码基础概念,需自行调整。
 
 **海星AI (Seastar AI)**  是  **“星尘AI方言学 (Stardust AI Dialectology)” 项目的  第一代  文化特征解析器**。  本项目  **专注于  构建  能够  解析  多语言文化内涵，并生成  独特 “星辰符号”  的  AI  系统  的  基础框架**。
 
