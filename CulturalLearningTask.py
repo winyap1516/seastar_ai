@@ -1,3 +1,11 @@
+# -*- coding: utf-8 -*-
+"""
+# 《星辰AI多语言理解系统》Colab实现指南
+# 由DeepSeek+Gemini与Win996用户共同设计，适配Google Colab环境
+# 本代码基于Hugging Face Transformers库和OpenFL联邦学习框架，
+# 旨在构建一个能够理解多语言文化内涵，并生成独特“星辰符号”的AI系统。
+# 核心功能包括：文化特征九层解析，星辰符号动态生成，以及联邦学习优化。
+"""
 # === 联邦学习任务 ===
 @fx.联邦学习任务                                                 # 使用 OpenFL 的 @fx.联邦学习任务 装饰器，将 CulturalLearningTask 类声明为一个联邦学习任务
 class CulturalLearningTask:
