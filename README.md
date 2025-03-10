@@ -64,7 +64,7 @@
 3.  **查看输出:**  程序将输出文化特征向量、动态星辰符号，并保存星辰符号图像到 `stellar.png` 文件。
 
 ## 代码文件说明 (Code Files Description)
-
+*   'CulturalLearningTask.py **联邦学习任务 装饰器，将 CulturalLearningTask 类声明为一个联邦学习任务
 *   `cultural_analyzer.py`:  **九转文化特征解析器模块代码**，实现文化特征的提取和分析。
 *   `stellar_symbol_generator.py`:  **星辰符号生成器模块代码**，负责根据文化特征向量生成星辰符号图像。
 *   `main.py`:  **主程序入口和使用示例代码**，演示如何加载模型、运行文化特征解析和星辰符号生成。
