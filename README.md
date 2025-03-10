@@ -73,6 +73,44 @@
 *   `LICENSE`: (可选) 开源许可证文件。
 *   `.gitignore`: (可选) Git 忽略规则文件。
 
+*   ### 关键功能说明
+# 对代码的关键功能进行总结说明
+1. 文化特征九层解析
+    - 通过Hook机制提取Transformer前9层输出
+    - 生成300维文化特征向量（示例显示前5维）
+
+2. 星辰符动态生成
+    - 根据文化向量生成螺旋符号
+    - 颜色和形状反映文化特征
+
+3. 联邦学习优化
+    - 仅微调最后3层文化相关参数
+    - 适配Colab环境的轻量化训练
+
+### 执行步骤
+# 代码的执行步骤说明
+1. 在Colab中运行全部单元格
+2. 查看示例输出
+    - 文化特征向量
+    - 星辰符号图像
+    - 联邦学习过程
+3. 自定义输入测试
+    your_text = "替换成你的测试文本"  #  提示用户可以修改 your_text 变量来测试不同的输入文本
+    your_vec = analyzer.analyze(your_text) #  用户修改 your_text 后，需要重新运行这行代码来解析新的文本
+
+### 性能优化建议
+# 针对Colab环境和模型性能的优化建议
+# 启用8位量化 (Colab T4 GPU适用)
+# 如果您的 Colab 环境使用 T4 GPU，可以尝试启用 8 位量化，进一步减少内存占用，可能会轻微牺牲模型精度
+model = AutoModelForCausalLM.from_pretrained(
+    ...,
+    load_in_8bit=True  # 替代 4 位量化，将 load_in_4bit=True 替换为 load_in_8bit=True
+)
+
+# 启用梯度检查点
+# 启用梯度检查点 (Gradient Checkpointing) 技术，可以在一定程度上减少 GPU 显存占用，但会增加计算时间
+model.gradient_checkpointing_enable()
+
 ## 性能优化建议 (Performance Optimization Tips)
 
 *   **启用 4 位或 8 位量化:**  在 Colab 等资源受限环境下， 可以启用 4 位或 8 位量化 (`load_in_4bit=True` 或 `load_in_8bit=True`)， 减少模型内存占用。
